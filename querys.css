@@ -1,0 +1,67 @@
+@media (min-width: 600px) {
+    .container {
+        grid-template:
+        "header header" 100
+        "input-text-area input-text-area"
+        "output-text-area output-text-area";
+    }
+
+    .buttons-ED {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        padding: 40px 40px 40px 80px;
+        grid-template:
+        "header input-text-area input-text-area input-text-area output-text-area"
+    }
+
+    .input-text-area {
+        grid-area: input-text-area;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .buttons-ED {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .message {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 25px;
+    } 
+
+    .message .muneco {
+        width: 180px;
+        height: 180px;
+        background-image: url(images/Muneco.svg);
+        background-size: cover; 
+    }
+
+    .output-container .output-text {
+        width: 100%;
+        height: 385px;
+        font-size: 24px;
+        color: var(--darkGray);
+        outline: none;
+        resize: none;
+        border: none;
+    }
+}

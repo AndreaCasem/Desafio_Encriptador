@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="querys.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="container">
+        <!-- Header -->
+        <header class="header">
+            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+        </header>
+
+        <!-- Sección entrada de texto -->
+        <section class="input-text-area">
+            <div class="text">
+                <textarea type="text" class="input-text" id="input-text" cols="70" rows="10" placeholder="Ingresa el texto aquí"></textarea>
+            </div>
+
+            <div class="text-buttons">
+                <div class="text-info">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <p class="info">Solo letras minúsculas y sin acento</p>
+                </div>
+
+                <div class="buttons-ED">
+                    <button type="button" class="button btn-encrypt" id="btn-encrypt" value="encrypt" onclick="hide()">Encriptar!</button>
+                    <button type="button" class="button btn-unencrypt" id="btn-unencrypt" value="unencrypt">Desencriptar!</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- sección salida del texto encriptado -->
+        <section class="output-text-area" id="output-text-area">
+                <!-- display salida de texto encriptado -->
+                <div class="output-container" id="output-container">
+                    <div class="output-container-text">
+                        <textarea name="output-text" type="text" class="output-text" id="output-text" cols="70" rows="10"></textarea>
+                    </div>
+                    <div class="output-container-copy">
+                        <button type="button" class="btn-copy" id="btn-copy" onclick="copyText()">Copiar</button>
+                    </div>
+                </div>
+
+                <!-- display mensaje inicial-->
+                <div class="message" id="message">
+                    <div class="muneco"></div>
+                    <p class="message-title">Ningún mensaje fue encontrado</p>
+                    <p class="message-text">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+        </section>
+    </main> 
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="author">&copy Copyright 2023 By María Andrea Castro - Alura + Oracle Next Education</p>
+        <ul class="social">
+            <li><a href="https://www.linkedin.com/in/mar%C3%ADa-andrea-castro/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/AndreaCasem" target="_blank"><i class="fa-brands fa-github"></i></a></i></li>
+        </ul>
+    </footer>
+
+    <!-- Script -->
+    <script src="app.js"></script>
+</body>
+</html>
