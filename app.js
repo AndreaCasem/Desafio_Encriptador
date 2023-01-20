@@ -1,4 +1,4 @@
-var inputText = document.querySelector('#input-text');
+let inputText = document.querySelector('#input-text');
 let outputText = document.querySelector('#output-text');
 let copy = document.querySelector('#output-text');
 let messageDisplay = document.querySelector('#message');
